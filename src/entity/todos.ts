@@ -5,7 +5,10 @@ export class Todo extends BaseEntity {
     @PrimaryGeneratedColumn("uuid")
     public id!: string;
 
-    @Column("varchar", { unique: true, nullable: false })
+    @Column("varchar", { nullable: false })
     public name!: string;
+
+    @Column("varchar", { nullable: true })
+    public description!: string;
 
 }

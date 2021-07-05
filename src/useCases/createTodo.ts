@@ -1,7 +1,7 @@
 import { DatabaseAdapter } from "src/adapters/database";
 import { Todo } from "../entity/todos"
 
-type CreateParams = {
+export type CreateParams = {
   name: string,
   description?: string,
 }
